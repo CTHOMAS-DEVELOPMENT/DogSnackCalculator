@@ -17,7 +17,7 @@ const Home = props => {
       {
         /*
         Store any momentum from the previous rise.Replace the previous value.
-        Momentum is only derived from the previous point. Momentum is zero unless the previous point is lower
+        Momentum is only derived from the previous point. Momentum is zero unless the previous point was higher
         */
         point.momentum=Math.abs(snacks)
       }

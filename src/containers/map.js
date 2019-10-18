@@ -1,6 +1,6 @@
 import React from 'react'
 import { API_KEY, MAP_STYLES, MAP_ZOOM, MAP_INITIAL_CENTER, MAX_WALK_LENGTH } from "../utils/constants"
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
 const MapContainer = props => {  
     /**
      * displayMarkers:
@@ -52,6 +52,6 @@ const MapContainer = props => {
 }
 export default GoogleApiWrapper({
     apiKey: API_KEY
-})(MapContainer);
+})(MapContainer)
   
   

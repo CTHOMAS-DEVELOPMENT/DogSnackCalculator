@@ -3,10 +3,10 @@ import { HEROKU_API } from "../utils/constants"
 import Map from "../containers/map"
 
 const Home = props => {
-  const [result, setResult] = React.useState([]);
-  const [selected, setWalk]  = React.useState("Walk A");
-  const [snacks, setSnacks]  = React.useState(0);
-  const [walks, setWalks]  = React.useState([]);
+  const [result, setResult] = React.useState([])
+  const [selected, setWalk]  = React.useState("Walk A")
+  const [snacks, setSnacks]  = React.useState(0)
+  const [walks, setWalks]  = React.useState([])
 
   const evaluatePoint=(point, currentValue,index)=>{
     let lastHeight=point.currentHeight
@@ -17,15 +17,15 @@ const Home = props => {
       {
         /*
         Store any momentum from the previous rise.Replace the previous value.
-        Momentum is only derived from the previous point. Momentum is zero unless the previous point was higher
+        Momentum is only derived from the previous point. Momentum is zero unless the previous point was higher.
         */
         point.momentum=Math.abs(snacks)
       }
       else
       {
         snacks=point.momentum?snacks-point.momentum:snacks
-        point.snacks+=snacks<0?0:snacks;
-        point.momentum=0;
+        point.snacks+=snacks<0?0:snacks
+        point.momentum=0
       }
     }
     
@@ -36,7 +36,7 @@ const Home = props => {
    * @param {*} walkData -Contains the id of the walk and the associated name
    */
   const getWalkResources=(walkData)=>{
-    return walkData.reduce(evaluatePoint,{ snacks : 0, momentum : 0, currentHeight:walkData[0].altitude});
+    return walkData.reduce(evaluatePoint,{ snacks : 0, momentum : 0, currentHeight:walkData[0].altitude})
   }
   /**
    * @param {*} id 
@@ -65,7 +65,7 @@ const Home = props => {
         getWalkDetail(1)
     })
 
-  }, []);
+  }, [])
   /**
    * Purpose - Sets the selected walk so that the right class can be applied to the button and 
    * inititialises the fetch for the selected walk detail
@@ -105,7 +105,7 @@ const Home = props => {
     <div className='item detaildiv'>
       <Map walks={walks} walkName={ selected }/>
     </div>
-    </>);
+    </>)
 }
 
-export default Home;
+export default Home

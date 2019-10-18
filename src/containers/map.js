@@ -11,7 +11,6 @@ const MapContainer = props => {
         return props.walks.map((store, index) => {
             const toolTip = `${ props.walkName } \nPosition: ${index+1}.\nAltitude: ${store.altitude} meters.`
             return <Marker key={index} id={index}
-            url={ "walkpoint.png"} 
                 title={ toolTip }
                 position={{
                     lat: store.latitude,

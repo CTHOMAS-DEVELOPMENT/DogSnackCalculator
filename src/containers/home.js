@@ -81,25 +81,25 @@ const Home = props => {
     <ul className="choicebuttons">
       {
         result.map((walk) =>{
-          return <li key={walk.id}><a href="#" className={selected === walk.name ? 'active' : 'dormant'} onClick={() => setWalkAttributes(walk) }>{walk.name}</a></li>
+          return <li key={walk.id}><a href='# ' className={selected === walk.name ? 'active' : 'dormant'} onClick={() => setWalkAttributes(walk) }>{walk.name}</a></li>
         })
       }
     </ul>
     </div>
     <div className='item detaildiv'>
     <ul className="choicebuttons">
-      <li><a href="#" className={'dormant'}><b>{'Snack Total'}</b></a></li>
-      <li><a href="#" className={'active'}>{ snacks }</a></li>
+      <li><a href='# ' className={'dormant'}><b>{'Snack Total'}</b></a></li>
+      <li><a href='# ' className={'active'}>{ snacks }</a></li>
     </ul>
     </div>
     <div className='item detaildiv'>
     <ul className="choicebuttons">
-      <li><a href="#" className={'dormant'}><b>{`Map for ${ selected }.`}</b></a></li>
+      <li><a href='# ' className={'dormant'}><b>{`Map for ${ selected }.`}</b></a></li>
     </ul>
     </div>
     <div className='item detaildiv'>
     <ul className="choicebuttons">
-      <li><a href="#" className={'dormant'}>{"Mouse over walk points for more information."}</a></li>
+      <li><a href='# ' className={'dormant'}>{"Mouse over walk points for more information."}</a></li>
     </ul>
     </div>
     <div className='item detaildiv'>

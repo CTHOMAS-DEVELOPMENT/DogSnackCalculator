@@ -37,7 +37,7 @@ const MapContainer = props => {
         else
         {
             return  <ul className="choicebuttons">
-                        <li><a href="#" className={'active'}>{ `${props.walkName} is too long. It exceeds the maximum number of points allowed (${ MAX_WALK_LENGTH } points)` }</a></li>
+                        <li><a href='# ' className={'active'}>{ `${props.walkName} is too long. It exceeds the maximum number of points allowed (${ MAX_WALK_LENGTH } points)` }</a></li>
                     </ul>
         }
     }
@@ -45,7 +45,7 @@ const MapContainer = props => {
     {
         return (
             <ul className="choicebuttons">
-                <li><a href="#" className={'active'}>{ `Waiting for data` }</a></li>
+                <li><a href='# ' className={'active'}>{ `Waiting for data` }</a></li>
             </ul>
         )
     }

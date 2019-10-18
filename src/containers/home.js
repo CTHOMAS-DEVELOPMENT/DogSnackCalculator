@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react'
 import { HEROKU_API } from "../utils/constants"
 import Map from "../containers/map"

@@ -16,10 +16,11 @@ You can fork this project and utilize the fault free configuration.
 ```
 React (16.8.0).
 Google Maps Api
-Backend storage: N/A. GMAPI.
+Backend storage: N/A*
 CSS/SCSS: Utilizes grid.
 Webpack.
 Babel.
+*Google Map Api
 ```
 ## Contributing
 ```
